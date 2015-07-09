@@ -48,7 +48,6 @@
   </sprites>
   <backgrounds name="background">
     <background>background\Logo_2</background>
-    <background>background\shitground</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
