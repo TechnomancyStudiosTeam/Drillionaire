@@ -26,16 +26,13 @@ varying vec4 v_vColour;
 
 void main()
 {
-    float amp = 5.0;
-    float time = 1.0;
-    float freq = 2.0;
-    float size = 1.0;
+    float amp = 5;
+    float time = 1;
+    float freq = 2;
+    float size = 1;
+
+    float distx = amp * sin(freq * y + size * time);
     
-    while(true)
-    {
-        float distx = amp * sin(freq * 1.0 + size * time);
-    }
-    
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord);
+    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord * distx );
 }
 
